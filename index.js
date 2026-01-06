@@ -166,7 +166,7 @@ client.on('messageCreate', async (message) => {
       console.log('Gagal balikin nickname:', error);
     }
 
-    const reply = await message.reply('Welkam back! Status AFK luwh udah dihapus. <a:smolhutao:1362644988147799424>');
+    const reply = await message.reply('Welkam back! Status AFK luwh udah dihapus.');
     setTimeout(() => reply.delete().catch(e => console.error("Gagal hapus pesan 'welcome back':", e)), 10000);
   }
 
